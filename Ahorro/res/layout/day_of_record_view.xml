@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/red"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+     >
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="126dp"
+        android:layout_marginBottom="-16dp"
+        android:layout_marginTop="-16dp"
+         >
+
+        <TextView
+            android:id="@+id/RMBText"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="CNY"
+            android:textColor="@color/white"
+            android:textSize="60sp"
+            android:typeface="sans" />
+
+        <TextView
+            android:id="@+id/sumText"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center|"
+            android:text="100"
+            android:textColor="@color/white"
+            android:textSize="60sp"
+            android:typeface="sans" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/recordList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+    </ListView>
+
+</LinearLayout>

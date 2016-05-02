@@ -1,0 +1,145 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.donghai.ahorro.ExpeneseActivity" >
+
+    <!-- 标题栏 -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/textView1"
+        android:background="#cf000000" >
+
+        <com.donghai.ahorro.view.DrawerButton
+            android:id="@+id/ic_back"
+            android:layout_width="50dp"
+            android:layout_height="45dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:clickable="true"
+            android:focusable="true" >
+        </com.donghai.ahorro.view.DrawerButton>
+
+        <TextView
+            android:id="@+id/tv_saveButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/action_save_button_selector"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:text="存储"
+            android:textColor="#fff"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <!-- 金额编辑框 -->
+
+    <RelativeLayout
+        android:id="@+id/edt_background"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:background="@color/red" >
+
+        <TextView
+            android:id="@+id/tv_limit"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="16dp"
+            android:focusable="false"
+            android:text="0"
+            android:textColor="#fff"
+            android:textSize="55sp" />
+
+        <TextView
+            android:id="@+id/tv_currency"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/tv_limit"
+            android:focusable="false"
+            android:text="@string/ic_rmb"
+            android:textColor="#fff"
+            android:textSize="55sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="340dp"
+        android:background="#fffce6"
+        android:orientation="vertical" >
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vp_expense_item"
+            android:layout_width="match_parent"
+            android:layout_height="152dp" >
+        </android.support.v4.view.ViewPager>
+
+        <!-- 小圆点 -->
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="2dp" >
+
+            <LinearLayout
+                android:id="@+id/ex_point_root"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+            </LinearLayout>
+
+            <View
+                android:id="@+id/point"
+                android:layout_width="6dp"
+                android:layout_height="6dp"
+                android:background="@drawable/point_selected_shape" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#aaa0a0a0" />
+
+        <!-- 列表菜单 -->
+
+        <ListView
+            android:id="@+id/lv_expense_menu"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="#aaa0a0a0"
+            android:dividerHeight="1dp"
+            android:scrollbars="none" >
+        </ListView>
+    </LinearLayout>
+
+    <!-- 下边栏 扫描发票 -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/setting_scan_selector"
+            android:clickable="true"
+            android:drawablePadding="-20dp"
+            android:drawableTop="@drawable/icon_bt_receipt"
+            android:focusable="true"
+            android:gravity="center"
+            android:text="发票扫描"
+            android:textColor="#fff"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+</LinearLayout>

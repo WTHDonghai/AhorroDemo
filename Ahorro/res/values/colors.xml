@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="red">#e6534b</color>
+    <color name="dark_red">#d8433a</color>
+    <color name="aciton_bar_background">#cf000000</color>
+    <color name="aciton_bar_press_background">#ef000000</color>
+    <color name="key_bord_press_background">#aaa</color>
+    <color name="key_bord_nomre_background">#fffce6</color>
+    <color name="key_bord_background">#fffce6</color>
+    <color name="BLACK">#000</color>
+    <color name="green">#9bca3e</color>
+    <color name="dark_green">#adca3e</color>
+    <color name="white">#fff</color>
+</resources>

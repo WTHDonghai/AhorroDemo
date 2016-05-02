@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@color/key_bord_nomre_background"
+        android:layout_gravity="center"
+        android:orientation="vertical" >
+
+        <DatePicker
+            android:id="@+id/datePick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:calendarViewShown="false"
+            android:contextClickable="false" />
+
+        <Button
+            android:id="@+id/chancel"
+            android:layout_width="100dp"
+            android:layout_height="32dp"
+            android:layout_alignLeft="@+id/datePick"
+            android:layout_below="@+id/datePick"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/chancel_button_selector"
+            android:onClick="datePickerChancel"
+            android:text="取消"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/ok"
+            android:layout_width="100dp"
+            android:layout_height="32dp"
+            android:layout_alignRight="@+id/datePick"
+            android:layout_below="@+id/datePick"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/ok_button_selector"
+            android:onClick="datePickerOk"
+            android:text="确定"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+</RelativeLayout>

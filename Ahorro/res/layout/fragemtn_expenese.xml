@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+        <!-- 主内容 -->
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/cont_pager"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.6" >
+        </android.support.v4.view.ViewPager>
+    <!-- 下边栏 -->
+
+        <RelativeLayout
+            android:id="@+id/setting_catgroy"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/setting_catgroy_selector"
+            android:clickable="true"
+            android:focusable="true" >
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="16dp"
+                android:src="@drawable/setting_icon_pig" />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/imageView1"
+                android:layout_below="@+id/imageView1"
+                android:text="99%"
+                android:textColor="#000" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="30dp"
+                android:text="NT$9,997/10,000"
+                android:textColor="#000" />
+        </RelativeLayout>
+
+</LinearLayout>
